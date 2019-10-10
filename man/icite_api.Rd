@@ -4,16 +4,16 @@
 \alias{icite_api}
 \title{Query the iCite api}
 \usage{
-icite_api(pmid)
+icite_api(pmids)
 }
 \arguments{
-\item{pmid}{character. The pubmed ID to be queried}
+\item{pmids}{character vector. The pubmed ID to be queried}
 }
 \value{
 If the call runs without error, the output is a simple S3 object
 }
 \description{
-\code{icite_api} returns the parsed results of a single call to the iCite api
+\code{icite_api} returns the parsed results of a single call to the iCite API
 }
 \examples{
 dat <- icite_api('27599104')
