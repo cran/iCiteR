@@ -19,7 +19,7 @@ dat <- icite_api('27599104')
 print(dat)
 
 ## ----demonstration4, error=TRUE------------------------------------------
-icite_api('42')
+icite_api('42a')
 
 ## ----demonstration5------------------------------------------------------
 dat_2012 <- search_metrics(year=2012, offset = '18000000', limit = '50')

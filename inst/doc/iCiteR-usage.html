@@ -12,7 +12,7 @@
 
 <meta name="author" content="Travis Riddle" />
 
-<meta name="date" content="2019-10-09" />
+<meta name="date" content="2019-11-05" />
 
 <title>iCiteR-usage</title>
 
@@ -303,7 +303,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">iCiteR-usage</h1>
 <h4 class="author">Travis Riddle</h4>
-<h4 class="date">2019-10-09</h4>
+<h4 class="date">2019-11-05</h4>
 
 
 
@@ -421,33 +421,10 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <a class="sourceLine" id="cb3-28" data-line-number="28"><span class="co">#&gt;  $ references                 : chr &quot;15973362 21858251 21957321 26015563 23685358 24781693 16926219 18987179 23687012 18978030 16391221 24184289 237&quot;| __truncated__</span></a>
 <a class="sourceLine" id="cb3-29" data-line-number="29"><span class="co">#&gt;  $ doi                        : chr &quot;10.1371/journal.pbio.1002541&quot;</span></a></code></pre></div>
 <p>If you are having trouble accessing the data for a particular PMID, the <code>icite_api</code> function will also return somewhat more informative error messages:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">icite_api</span>(<span class="st">'42'</span>)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; &lt;iCite request: api/pubs?pmids=42&amp;format=csv&gt;</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; 'data.frame':    1 obs. of  24 variables:</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;  $ pmid                       : int 42</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="co">#&gt;  $ year                       : int 1975</span></a>
-<a class="sourceLine" id="cb4-6" data-line-number="6"><span class="co">#&gt;  $ title                      : chr &quot;A competitive labeling method for the determination of the chemical properties of solitary functional groups in proteins.&quot;</span></a>
-<a class="sourceLine" id="cb4-7" data-line-number="7"><span class="co">#&gt;  $ authors                    : chr &quot;R G Duggleby, H Kaplan&quot;</span></a>
-<a class="sourceLine" id="cb4-8" data-line-number="8"><span class="co">#&gt;  $ journal                    : chr &quot;Biochemistry&quot;</span></a>
-<a class="sourceLine" id="cb4-9" data-line-number="9"><span class="co">#&gt;  $ is_research_article        : chr &quot;Yes&quot;</span></a>
-<a class="sourceLine" id="cb4-10" data-line-number="10"><span class="co">#&gt;  $ relative_citation_ratio    : logi NA</span></a>
-<a class="sourceLine" id="cb4-11" data-line-number="11"><span class="co">#&gt;  $ nih_percentile             : logi NA</span></a>
-<a class="sourceLine" id="cb4-12" data-line-number="12"><span class="co">#&gt;  $ human                      : num 0</span></a>
-<a class="sourceLine" id="cb4-13" data-line-number="13"><span class="co">#&gt;  $ animal                     : num 0</span></a>
-<a class="sourceLine" id="cb4-14" data-line-number="14"><span class="co">#&gt;  $ molecular_cellular         : num 1</span></a>
-<a class="sourceLine" id="cb4-15" data-line-number="15"><span class="co">#&gt;  $ apt                        : num 0.05</span></a>
-<a class="sourceLine" id="cb4-16" data-line-number="16"><span class="co">#&gt;  $ is_clinical                : chr &quot;No&quot;</span></a>
-<a class="sourceLine" id="cb4-17" data-line-number="17"><span class="co">#&gt;  $ citation_count             : int 11</span></a>
-<a class="sourceLine" id="cb4-18" data-line-number="18"><span class="co">#&gt;  $ citations_per_year         : num 0.25</span></a>
-<a class="sourceLine" id="cb4-19" data-line-number="19"><span class="co">#&gt;  $ expected_citations_per_year: logi NA</span></a>
-<a class="sourceLine" id="cb4-20" data-line-number="20"><span class="co">#&gt;  $ field_citation_rate        : num 2.86</span></a>
-<a class="sourceLine" id="cb4-21" data-line-number="21"><span class="co">#&gt;  $ provisional                : chr &quot;No&quot;</span></a>
-<a class="sourceLine" id="cb4-22" data-line-number="22"><span class="co">#&gt;  $ x_coord                    : num -0.866</span></a>
-<a class="sourceLine" id="cb4-23" data-line-number="23"><span class="co">#&gt;  $ y_coord                    : num -0.5</span></a>
-<a class="sourceLine" id="cb4-24" data-line-number="24"><span class="co">#&gt;  $ cited_by_clin              : logi NA</span></a>
-<a class="sourceLine" id="cb4-25" data-line-number="25"><span class="co">#&gt;  $ cited_by                   : chr &quot;3099757 7397107 7149255 3135412 6365082 7115297 2095202 10469490 7030309 7417503 3994995&quot;</span></a>
-<a class="sourceLine" id="cb4-26" data-line-number="26"><span class="co">#&gt;  $ references                 : chr &quot;4944073 4204227 5764436 5423263 4587927 235280 6055183 5415110 5158490 804314 6022849 4656796 5777784 14314361 &quot;| __truncated__</span></a>
-<a class="sourceLine" id="cb4-27" data-line-number="27"><span class="co">#&gt;  $ doi                        : chr &quot;10.1021/bi00694a023&quot;</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">icite_api</span>(<span class="st">'42a'</span>)</a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="co">#&gt; Warning in stats::na.omit(as.integer(pmids)): NAs introduced by coercion</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="co">#&gt; Error in construct_query(query_type = &quot;pmid&quot;, pmids = pmids): No valid pubmed IDs detected. Please provide integer values, or</span></a>
+<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="co">#&gt;          their character representation. Try: 27599104</span></a></code></pre></div>
 <p>It is worth noting that the iCite database presently goes back to 1995. Earlier papers will not have any data associated with them. Also, recent papers may not be available. See <a href="https://icite.od.nih.gov/stats" class="uri">https://icite.od.nih.gov/stats</a> and <a href="https://icite.od.nih.gov/user_guide?page_id=ug_overview" class="uri">https://icite.od.nih.gov/user_guide?page_id=ug_overview</a> for details of the iCite system that this package works with.</p>
 </div>
 <div id="search_metrics" class="section level3">

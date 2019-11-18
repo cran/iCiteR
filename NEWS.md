@@ -1,3 +1,9 @@
+# iCiteR 0.2.1
+
+- Fixed the error example in the vignette & readme
+- Increased test coverage.
+- Dropped needless test for error message.
+
 # iCiteR 0.2.0
 
 - Added more informative error messaging and adjusted the vignettes/readme
